@@ -11,7 +11,7 @@ void abrirarquivo(int argc, char *argv[]) {
 FILE *arquivo = fopen(argv[1], "r");
 
 if (arquivo == NULL) {
-	perror("kmode");
+	perror("lordit");
 	return;
 }
 start_color();
@@ -22,7 +22,7 @@ attron(COLOR_PAIR(2));
 for (int i = 0; i < ndl; i++) {
 mvprintw(0, i, " ");
 }
-mvprintw(0, 0, "kmode\t                         %s                                      ", argv[1]);
+mvprintw(0, 0, "lordit 1.0\t                         %s                                      ", argv[1]);
 attroff(COLOR_PAIR(2));
 refresh();
 
