@@ -5,7 +5,7 @@ TARGET = lordit
 all: $(TARGET)
 
 $(TARGET): src/lordit.c
-	$(CC) $(CFLAGS) src/lordit.c -o $(TARGET) -lncurses
+	$(CC) $(CFLAGS) src/lordit.c src/edit.c -o $(TARGET) -lncurses
 
 clean:
 	rm -f $(TARGET)
