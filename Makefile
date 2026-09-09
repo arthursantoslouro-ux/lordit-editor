@@ -1,10 +1,10 @@
 CC = clang
 CFLAGS = -Wall -Wextra
-TARGET = kmode
+TARGET = lordit
 
 all: $(TARGET)
 
-$(TARGET): src/kmode.c
+$(TARGET): src/lordit.c
 	$(CC) $(CFLAGS) src/lordit.c -o $(TARGET) -lncurses
 
 clean:
