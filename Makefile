@@ -5,7 +5,7 @@ TARGET = kmode
 all: $(TARGET)
 
 $(TARGET): src/kmode.c
-	$(CC) $(CFLAGS) src/kmode.c -o $(TARGET) -lncurses
+	$(CC) $(CFLAGS) src/lordit.c -o $(TARGET) -lncurses
 
 clean:
 	rm -f $(TARGET)
